@@ -153,3 +153,127 @@ Here’s a high-level overview of how Java programs are executed:
 
 This approach allows Java to be **platform-independent** (write once, run anywhere) as the JVM acts as an abstraction
 layer between the bytecode and the underlying hardware.
+
+## Variables
+
+to declare a variable you first need to specify the data-type for that variable
+
+```java
+public class Main {
+    public static main() {
+        int myAge = 24;
+        system.out.println(myAge);
+    }
+}
+
+```
+
+## Data Types
+
+Data types in Java define the type of data that can be stored in a variable, how much memory it occupies, and the
+operations that can be performed on that data. Java is a statically typed language, meaning each variable must be
+declared with a data type before use.
+
+### **Types of Data Types in Java**
+
+Java has two main categories of data types:
+
+1. **Primitive Data Types**
+2. **Reference (Non-Primitive) Data Types**
+
+---
+
+## **1. Primitive Data Types**
+
+Primitive data types are the basic building blocks of data manipulation in Java. There are 8 primitive data types:
+
+| Data Type | Size (bits)               | Default Value | Range (approximate)    | Description                                                   |
+|-----------|---------------------------|---------------|------------------------|---------------------------------------------------------------|
+| `byte`    | 8                         | 0             | -128 to 127            | Smallest integer type. Useful for saving memory.              |
+| `short`   | 16                        | 0             | -32,768 to 32,767      | Short integer type.                                           |
+| `int`     | 32                        | 0             | -2^31 to 2^31 - 1      | Default integer type. Most commonly used.                     |
+| `long`    | 64                        | 0L            | -2^63 to 2^63 - 1      | Large integer type. Used when `int` is not sufficient.        |
+| `float`   | 32                        | 0.0f          | 1.4E-45 to 3.4E+38     | Single-precision floating-point number.                       |
+| `double`  | 64                        | 0.0d          | 4.9E-324 to 1.7E+308   | Double-precision floating-point number. Default for decimals. |
+| `char`    | 16                        | '\u0000'      | 0 to 65,535 (unsigned) | Used to store single characters (Unicode characters).         |
+| `boolean` | 1 (not precisely defined) | `false`       | `true` or `false`      | Stores logical values, true or false.                         |
+
+### **Key Points About Primitive Data Types**:
+
+- **Memory-efficient**: Primitive data types are more memory-efficient than objects.
+- **No methods**: They do not have methods like objects.
+- **Default values**: If not initialized, they have default values (e.g., 0 for integers, false for boolean).
+
+---
+
+## **2. Reference (Non-Primitive) Data Types**
+
+Reference data types in Java are used to store references to objects. These include:
+
+- **Classes**
+- **Interfaces**
+- **Arrays**
+- **Strings**
+
+Unlike primitive types, reference types store the memory address (or reference) where the actual object is located.
+
+### **Common Reference Data Types**:
+
+1. **Classes**: A class is a blueprint for creating objects. When you create an object from a class, that object becomes
+   a reference type.
+    ```java
+    String name = "John";  // `name` is a reference to a String object
+    ```
+
+2. **Arrays**: Arrays in Java are reference types, which store multiple values of a specific type.
+    ```java
+    int[] numbers = {1, 2, 3, 4};  // `numbers` is a reference to an array object
+    ```
+
+3. **Strings**: Even though they are commonly used, `String` is a reference type, not a primitive one. Strings in Java
+   are immutable.
+    ```java
+    String message = "Hello, Java!";
+    ```
+
+### **Key Points About Reference Data Types**:
+
+- **Stores references**: Reference data types store the address (reference) of the actual data.
+- **Objects and methods**: Reference types allow you to create objects that have methods and fields.
+- **Null**: If a reference type is not initialized, it defaults to `null`.
+- **Dynamic memory allocation**: Reference types are dynamically allocated in memory (on the heap).
+
+---
+
+## **Example Usage**:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // Primitive data types
+        int age = 25;       // integer type
+        double salary = 50000.50; // floating-point type
+        boolean isEmployed = true; // boolean type
+
+        // Reference data types
+        String name = "Alice";    // reference to a String object
+        int[] numbers = {1, 2, 3}; // reference to an array of integers
+
+        System.out.println(name + " is " + age + " years old.");
+    }
+}
+```
+
+### **Key Differences Between Primitive and Reference Data Types**:
+
+| Feature             | Primitive Data Types                   | Reference Data Types                 |
+|---------------------|----------------------------------------|--------------------------------------|
+| **Memory Location** | Stored in the stack memory.            | Stored in the heap memory.           |
+| **Default Value**   | Zero (0), false, or null character.    | `null` if not initialized.           |
+| **Operations**      | Can only store values.                 | Can have methods and fields.         |
+| **Mutability**      | Immutable (the value itself is fixed). | Mutable (object's state can change). |
+
+---
+
+In summary, data types in Java are divided into primitive (simple values) and reference types (objects and arrays).
+Understanding these types is crucial for efficient memory use and performance in Java applications.
