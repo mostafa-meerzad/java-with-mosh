@@ -277,3 +277,97 @@ public class Main {
 
 In summary, data types in Java are divided into primitive (simple values) and reference types (objects and arrays).
 Understanding these types is crucial for efficient memory use and performance in Java applications.
+
+## Escape Sequences
+
+When you need special character in your string you need to escape them to make it work
+the escape-sequences start with a **\\** like **\n** for newline, **\\"** for a single double-quote,
+**\\\\** for single back-slash and **\s** for a space-character
+
+## Arrays
+
+In Java, an **array** is a data structure that stores a fixed-size sequence of elements of the same type. Each element
+in the array can be accessed using an index, starting from `0` for the first element. Arrays are useful when you know in
+advance the number of elements you want to store.
+
+### Key Points about Arrays in Java:
+
+1. **Declaration:**
+   You declare an array by specifying the type of its elements and using square brackets `[]`. You can either initialize
+   the array immediately or later.
+
+   ```java
+   // Declaration without initialization
+   int[] numbers;
+   
+   // Declaration and initialization with size
+   int[] numbers = new int[5]; // An array of 5 integers
+   // dataType[] arrayName = new dataType[numberOfElements];
+   ```
+   use **new** operator because arrays are reference-type
+
+2. **Initialization:**
+   You can initialize an array with specific values when declaring it.
+
+   ```java
+   int[] numbers = {10, 20, 30, 40, 50}; // Array of integers with 5 elements
+   ```
+
+3. **Accessing Elements:**
+   Array elements are accessed using their index. The index starts from `0` up to `n-1` where `n` is the size of the
+   array.
+
+   ```java
+   int first = numbers[0]; // Access first element, 10
+   numbers[1] = 25;        // Update second element to 25
+   ```
+
+4. **Length of an Array:**
+   The size of the array can be accessed using the `.length` property.
+
+   ```java
+   int size = numbers.length; // Get the length of the array (5)
+   ```
+
+5. **Multidimensional Arrays:**
+   You can create arrays with multiple dimensions (like a matrix).
+
+   ```java
+   int[][] matrix = {
+       {1, 2, 3},
+       {4, 5, 6},
+       {7, 8, 9}
+   };
+   
+   int value = matrix[1][2]; // Accesses element at row 2, column 3 (6)
+   matrix[0][2] = 99; // set element at row 1, column 3  to (99)
+   ```
+
+### Example of Using Arrays in Java:
+
+```java
+public class ArrayExample {
+    public static void main(String[] args) {
+        // Create an array of 5 integers
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        // Loop through the array and print each element
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Element at index " + i + ": " + numbers[i]);
+        }
+
+        // Modify an element
+        numbers[2] = 35;
+        System.out.println("Updated element at index 2: " + numbers[2]);
+    }
+}
+```
+
+### Characteristics of Java Arrays:
+
+- **Fixed size**: Once created, the size of an array cannot change.
+- **Type-safe**: Arrays can only hold elements of the specified type.
+- **Zero-based indexing**: The first element is at index `0`, and the last is at `length - 1`.
+
+Java arrays are a fundamental structure used in most programs, but in larger or more dynamic cases, other structures
+like `ArrayList` or `LinkedList` may be more flexible.
