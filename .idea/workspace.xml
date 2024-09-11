@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="arrays explained">
-      <change afterPath="$PROJECT_DIR$/src/ConstantsExample.java" afterDir="false" />
+    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="constants explained">
+      <change afterPath="$PROJECT_DIR$/src/ArithmeticExpressions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.md" afterDir="false" />
     </list>
@@ -38,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ArithmeticExpressions.executor": "Run",
     "Application.ArrayExample.executor": "Run",
     "Application.ConstantsExample.executor": "Run",
     "Application.Main.executor": "Run",
@@ -48,7 +49,14 @@
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ConstantsExample">
+  <component name="RunManager" selected="Application.ArithmeticExpressions">
+    <configuration name="ArithmeticExpressions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArithmeticExpressions" />
+      <module name="myJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayExample" />
       <module name="myJava" />
@@ -85,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArithmeticExpressions" />
         <item itemvalue="Application.ConstantsExample" />
         <item itemvalue="Application.ArrayExample" />
         <item itemvalue="Application.Main" />
@@ -148,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726072494952</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="constants explained">
+      <option name="closed" value="true" />
+      <created>1726072892353</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726072892353</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +185,7 @@
     <MESSAGE value="explain how java code runs" />
     <MESSAGE value="data-types explained in nutshell" />
     <MESSAGE value="arrays explained" />
-    <option name="LAST_COMMIT_MESSAGE" value="arrays explained" />
+    <MESSAGE value="constants explained" />
+    <option name="LAST_COMMIT_MESSAGE" value="constants explained" />
   </component>
 </project>

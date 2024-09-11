@@ -372,7 +372,6 @@ public class ArrayExample {
 Java arrays are a fundamental structure used in most programs, but in larger or more dynamic cases, other structures
 like `ArrayList` or `LinkedList` may be more flexible.
 
-
 ## Constants
 
 In Java, a **constant** is a variable whose value cannot be changed once it's initialized. Constants are typically used
@@ -469,3 +468,148 @@ public class ConstantsExample {
 - `final` variables can only be assigned a value once.
 - If a constant is `static`, it belongs to the class and is shared across all instances.
 - Constants improve code clarity, making it easier to understand what certain values represent.
+
+## Arithmetic Expressions
+
+In Java, an **arithmetic expression** is a combination of variables, constants, and operators that are evaluated to
+produce a numeric result. Java supports common arithmetic operations like addition, subtraction, multiplication,
+division, and more, using **arithmetic operators**.
+
+### Arithmetic Operators in Java:
+
+Here are the main arithmetic operators:
+
+| Operator | Description         | Example                                        |
+|----------|---------------------|------------------------------------------------|
+| `+`      | Addition            | `a + b` (adds `a` and `b`)                     |
+| `-`      | Subtraction         | `a - b` (subtracts `b` from `a`)               |
+| `*`      | Multiplication      | `a * b` (multiplies `a` by `b`)                |
+| `/`      | Division            | `a / b` (divides `a` by `b`)                   |
+| `%`      | Modulus (remainder) | `a % b` (remainder when `a` is divided by `b`) |
+
+### Example of Arithmetic Expression:
+
+```java
+public class ArithmeticExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = 5;
+
+        // Basic arithmetic operations
+        int sum = a + b;               // 10 + 20 = 30
+        int difference = b - a;        // 20 - 10 = 10
+        int product = a * c;           // 10 * 5 = 50
+        int quotient = b / c;          // 20 / 5 = 4
+        int remainder = b % c;         // 20 % 5 = 0
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Quotient: " + quotient);
+        System.out.println("Remainder: " + remainder);
+    }
+}
+```
+
+### Operator Precedence:
+
+In Java, operators are evaluated based on precedence (order of operations). The precedence determines which part of the
+expression is evaluated first.
+
+1. **Multiplication (`*`), Division (`/`), and Modulus (`%`)** have higher precedence than Addition (`+`) and
+   Subtraction (`-`).
+2. **Parentheses** can be used to group expressions and override the default precedence.
+
+#### Example:
+
+```java
+int result = 10 + 5 * 3;    // Multiplies first, then adds: 10 + (5 * 3) = 25
+int result2 = (10 + 5) * 3; // Parentheses first: (10 + 5) * 3 = 45
+```
+
+### Integer Division vs. Floating-point Division:
+
+- **Integer division** (`/`): When both operands are integers, the result is an integer, and any fractional part is
+  discarded (not rounded).
+
+  ```java
+  int result = 10 / 3;  // Result is 3, not 3.33
+  ```
+
+- **Floating-point division**: If at least one operand is a floating-point type (`float` or `double`), the result
+  includes decimal places.
+
+  ```java
+  double result = 10.0 / 3; // Result is 3.333...
+  ```
+
+### Modulus Operator (`%`):
+
+The modulus operator gives the **remainder** of a division. It’s useful for tasks like determining if a number is even
+or odd.
+
+#### Example:
+
+```java
+int remainder = 10 % 3;  // Result is 1 because 10 divided by 3 gives a remainder of 1
+```
+
+### Compound Assignment Operators:
+
+Java provides **compound assignment operators** to simplify arithmetic operations and assignments. These operators
+combine an arithmetic operation with assignment in one step.
+
+| Compound Operator | Equivalent Expression | Example   |
+|-------------------|-----------------------|-----------|
+| `+=`              | `a = a + b`           | `a += 5;` |
+| `-=`              | `a = a - b`           | `a -= 3;` |
+| `*=`              | `a = a * b`           | `a *= 2;` |
+| `/=`              | `a = a / b`           | `a /= 4;` |
+| `%=`              | `a = a % b`           | `a %= 3;` |
+
+#### Example:
+
+```java
+int a = 10;
+a +=5;  // Same as a = a + 5; Now a is 15
+a *=2;  // Same as a = a * 2; Now a is 30
+```
+
+### Increment and Decrement Operators:
+
+Java provides shorthand operators to **increment** and **decrement** a variable's value by `1`.
+
+- **Increment (`++`)**:
+    - `a++`: Post-increment (returns the value before incrementing)
+    - `++a`: Pre-increment (increments the value first, then returns it)
+
+- **Decrement (`--`)**:
+    - `a--`: Post-decrement (returns the value before decrementing)
+    - `--a`: Pre-decrement (decrements the value first, then returns it)
+
+#### Example:
+
+```java
+int a = 5;
+int b = a++;  // b is 5, a becomes 6
+int c = ++a;  // a becomes 7, then c is 7
+```
+
+### Arithmetic Expression Example:
+
+```java
+public class ExpressionExample {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+        int result = (a + b) * 2 - b;  // (10 + 5) * 2 - 5 = 25
+
+        System.out.println("Result: " + result);  // Output: Result: 25
+    }
+}
+```
+
+In summary, arithmetic expressions in Java are used to perform mathematical calculations using various operators.
+Operator precedence and data types (like integer vs. floating-point) can affect the result of an expression, so
+understanding how to control these behaviors is important in writing correct programs.
