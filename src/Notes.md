@@ -371,3 +371,101 @@ public class ArrayExample {
 
 Java arrays are a fundamental structure used in most programs, but in larger or more dynamic cases, other structures
 like `ArrayList` or `LinkedList` may be more flexible.
+
+
+## Constants
+
+In Java, a **constant** is a variable whose value cannot be changed once it's initialized. Constants are typically used
+to represent fixed values that are repeated in the program, such as mathematical constants, configuration settings, or
+default values.
+
+### How to Define Constants in Java:
+
+1. **Using `final` keyword**:
+   To make a variable a constant, you use the `final` keyword. Once a `final` variable is assigned a value, it cannot be
+   modified.
+
+   ```java
+   final int DAYS_IN_WEEK = 7;
+   ```
+
+2. **Naming Convention**:
+   By convention, constants in Java are named in all uppercase letters with words separated by underscores.
+
+   ```java
+   final double PI = 3.14159;
+   final int MAX_USERS = 100;
+   ```
+
+### Key Characteristics of Constants:
+
+- **Value cannot be changed**: After initialization, a constant’s value is immutable.
+- **Must be initialized when declared**: A constant has to be assigned a value at the time of declaration or in the
+  constructor (for instance variables).
+
+   ```java
+   final int MAX_SCORE;
+   public MyClass() {
+       MAX_SCORE = 100; // Can only be set once, even in a constructor
+   }
+   ```
+
+3. **Common Use Cases**:
+    - Constants help prevent "magic numbers" in the code, which are hard-coded values scattered around the program.
+      Using named constants improves readability and maintainability.
+    - Constants are also helpful when values need to be shared across multiple classes in an application.
+
+### Example of Constants in Java:
+
+```java
+public class ConstantsExample {
+
+    public static void main(String[] args) {
+        // Defining constants
+        final double PI = 3.14159;  // Common constant (static for sharing across instances)
+        final int MAX_USERS = 100;  // Application-wide constant
+
+        // Using constants in calculations
+        double radius = 5.0;
+        double area = PI * radius * radius;
+        System.out.println("Area of circle: " + area);
+
+        System.out.println("Maximum number of users allowed: " + MAX_USERS);
+    }
+}
+```
+
+### Types of Constants:
+
+1. **Class Constants (`static final`)**:
+   Constants that are shared across all instances of a class should be declared `static final`. These constants are
+   often used for values that belong to the class itself rather than any specific object.
+
+   ```java
+   public static final String APP_NAME = "MyApplication";
+   ```
+
+2. **Instance Constants (`final`)**:
+   These constants are specific to a particular instance of a class. Even though they are constants, each object of the
+   class can have its own value assigned when the object is created (in the constructor).
+
+   ```java
+   public final int id;
+   
+   public MyClass(int id) {
+       this.id = id;  // Can only be assigned once per object
+   }
+   ```
+
+### Benefits of Using Constants:
+
+- **Readability**: Constants make code easier to understand because meaningful names replace hardcoded values.
+- **Maintainability**: If a constant value changes, you only need to update it in one place.
+- **Avoids errors**: Using constants helps prevent accidental modifications of important values that shouldn't change
+  during program execution.
+
+### Important Points to Remember:
+
+- `final` variables can only be assigned a value once.
+- If a constant is `static`, it belongs to the class and is shared across all instances.
+- Constants improve code clarity, making it easier to understand what certain values represent.
