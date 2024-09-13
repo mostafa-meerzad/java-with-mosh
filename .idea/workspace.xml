@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="casting and type-conversion">
-      <change afterPath="$PROJECT_DIR$/src/MathClass.java" afterDir="false" />
+    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="Math calss">
+      <change afterPath="$PROJECT_DIR$/src/ReadingInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.md" afterDir="false" />
     </list>
@@ -43,6 +43,7 @@
     "Application.ConstantsExample.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MathClass.executor": "Run",
+    "Application.ReadingInput.executor": "Run",
     "Application.TypeCasting.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -52,16 +53,9 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MathClass">
+  <component name="RunManager" selected="Application.ReadingInput">
     <configuration name="ArithmeticExpressions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArithmeticExpressions" />
-      <module name="myJava" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ArrayExample" />
       <module name="myJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,6 +70,13 @@
     </configuration>
     <configuration name="MathClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MathClass" />
+      <module name="myJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadingInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReadingInput" />
       <module name="myJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadingInput" />
         <item itemvalue="Application.MathClass" />
         <item itemvalue="Application.TypeCasting" />
         <item itemvalue="Application.ArithmeticExpressions" />
         <item itemvalue="Application.ConstantsExample" />
-        <item itemvalue="Application.ArrayExample" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726214871713</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Math calss">
+      <option name="closed" value="true" />
+      <created>1726218866729</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1726218866729</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +224,7 @@
     <MESSAGE value="constants explained" />
     <MESSAGE value="arithmetic operations explained" />
     <MESSAGE value="casting and type-conversion" />
-    <option name="LAST_COMMIT_MESSAGE" value="casting and type-conversion" />
+    <MESSAGE value="Math calss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Math calss" />
   </component>
 </project>

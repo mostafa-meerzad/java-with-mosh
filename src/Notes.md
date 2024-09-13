@@ -782,3 +782,124 @@ public class MathClass {
 }
 
 ```
+
+## Reading Input
+
+Got it! Let's go step by step to explain how to read input from the user in Java using the `Scanner` class.
+
+### 1. **What is `Scanner`?**
+
+The `Scanner` class in Java is part of the `java.util` package, which allows us to read user input. It can read
+different types of input: strings, integers, doubles (decimal numbers), etc.
+
+### 2. **Importing the `Scanner` Class**
+
+To use `Scanner`, you need to tell Java that you're going to use it by importing the `java.util.Scanner` class at the
+beginning of your program.
+
+```java
+import java.util.Scanner;
+```
+
+### 3. **Creating a `Scanner` Object**
+
+After importing the `Scanner` class, you need to create a `Scanner` object to read the input. You create it like this:
+
+```java
+Scanner scanner = new Scanner(System.in);
+```
+
+Here’s what’s happening:
+
+- `Scanner scanner`: Declares a new `Scanner` object named `scanner`.
+- `new Scanner(System.in)`: This is the actual command that sets up the scanner to read input from the
+  keyboard (`System.in` is the standard input stream, which refers to the keyboard).
+
+### 4. **Reading Input from the User**
+
+Now that you have a `Scanner` object, you can use it to read input from the user. The `Scanner` class provides methods
+to read different types of data.
+
+- **Reading a String:**
+  Use `nextLine()` to read a line of text (including spaces).
+
+  ```java
+  String name = scanner.nextLine(); // Reads a line of input and stores it in the variable 'name'
+  ```
+
+- **Reading an Integer:**
+  Use `nextInt()` to read an integer.
+
+  ```java
+  int age = scanner.nextInt(); // Reads an integer input and stores it in the variable 'age'
+  ```
+
+- **Reading a Double (Decimal):**
+  Use `nextDouble()` to read a decimal number.
+
+  ```java
+  double height = scanner.nextDouble(); // Reads a decimal number and stores it in the variable 'height'
+  ```
+
+### 5. **Printing Output to the User**
+
+To display output in Java, you use the `System.out.println()` method, which prints a message to the console.
+
+```java
+System.out.println("Hello, "+name +". You are "+age+" years old.");
+```
+
+### 6. **Closing the `Scanner`**
+
+Once you've finished using the `Scanner`, it’s good practice to close it to free up system resources:
+
+```java
+scanner.close();
+```
+
+### Full Example:
+
+Here’s the complete program with all the steps explained:
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // 1. Create a Scanner object to read input from the keyboard
+        Scanner scanner = new Scanner(System.in);
+
+        // 2. Prompt the user for their name and read a string input
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine(); // Reads a full line of text
+
+        // 3. Prompt the user for their age and read an integer input
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt(); // Reads an integer
+
+        // 4. Prompt the user for their height and read a double (decimal) input
+        System.out.print("Enter your height in meters: ");
+        double height = scanner.nextDouble(); // Reads a decimal number
+
+        // 5. Print the user's input back to the console
+        System.out.println("Hello, " + name + ". You are " + age + " years old and " + height + " meters tall.");
+
+        // 6. Close the scanner to avoid resource leaks
+        scanner.close();
+    }
+}
+```
+
+### Explanation:
+
+1. **`Scanner scanner = new Scanner(System.in);`** – Sets up the program to read input from the user via the keyboard.
+2. **`System.out.print("Enter your name: ");`** – Asks the user to enter their name.
+3. **`String name = scanner.nextLine();`** – Reads the input typed by the user as a string and stores it in the `name`
+   variable.
+4. **`int age = scanner.nextInt();`** – Reads the next integer typed by the user and stores it in the `age` variable.
+5. **`double height = scanner.nextDouble();`** – Reads the next decimal number typed by the user and stores it in
+   the `height` variable.
+6. **`System.out.println("Hello, " + name + "...");`** – Displays the collected input back to the user in a sentence.
+7. **`scanner.close();`** – Closes the scanner to release system resources.
+
+Feel free to ask if something is unclear or if you'd like more explanation!
