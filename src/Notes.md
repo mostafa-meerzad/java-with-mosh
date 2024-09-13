@@ -631,7 +631,9 @@ a smaller to a larger data type (widening conversion).
 ```java
 int num = 100;
 double d = num;  // Automatic conversion from int to double
-System.out.println(d);  // Outputs 100.0
+System.out.
+
+println(d);  // Outputs 100.0
 ```
 
 In the example above, the integer value `num` is automatically converted into a `double`, which is a wider data type.
@@ -657,7 +659,9 @@ the conversion might result in **loss of data** (narrowing conversion), or when 
 ```java
 double d = 9.7;
 int i = (int) d;  // Explicit casting from double to int
-System.out.println(i);  // Outputs 9
+System.out.
+
+println(i);  // Outputs 9
 ```
 
 Here, a `double` is explicitly cast to an `int`. Since `double` has a decimal part, casting to `int` results in
@@ -675,7 +679,9 @@ truncation (the decimal part is lost).
 ```java
 long l = 1000L;
 int i = (int) l;  // Explicit casting from long to int
-System.out.println(i);  // Outputs 1000
+System.out.
+
+println(i);  // Outputs 1000
 ```
 
 ### 3. **Reference Type Casting**:
@@ -745,3 +751,34 @@ a `ClassCastException` will occur.
 
 Understanding casting and type conversion in Java is essential, especially when dealing with different types of
 variables or working with object-oriented programming.
+
+## The Math Class
+
+The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm,
+square root, and trigonometric functions.
+
+```java
+
+public class MathClass {
+    public static void main() {
+        float rounded = Math.round(123.57);
+        System.out.println(rounded);
+        int ceil = (int) Math.ceil(1.1); // ceiling of 1.1 is 1 but the Math.ceil returns a double, cast to int
+        System.out.println(ceil);
+
+        int sqrt = (int) Math.sqrt(8);// Math.sqrt return double here need to convert to int
+        System.out.println(sqrt);
+        int max = Math.max(1, 10);
+        System.out.println(max);
+        //int rand =(int) Math.random(); // the result of casting Math.random to int is always 0
+        //int rand = (int) Math.round(Math.random() * 100); // random value 1 to 100 int
+        //int rand = (int) (Math.random() * 100); // random value 1 to 100 int
+        double rand = Math.random() * 100; // random value 1 to 100 double
+        //double rand = Math.random(); // random value 0 to 1
+        System.out.println(rand);
+
+    }
+
+}
+
+```

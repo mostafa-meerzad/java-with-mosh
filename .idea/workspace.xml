@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="constants explained">
-      <change afterPath="$PROJECT_DIR$/src/TypeCasting.java" afterDir="false" />
+    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="casting and type-conversion">
+      <change afterPath="$PROJECT_DIR$/src/MathClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.md" afterDir="false" />
     </list>
@@ -36,21 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ArithmeticExpressions.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ArrayExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ConstantsExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ArithmeticExpressions.executor": "Run",
+    "Application.ArrayExample.executor": "Run",
+    "Application.ConstantsExample.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MathClass.executor": "Run",
+    "Application.TypeCasting.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Application.TypeCasting">
+}]]></component>
+  <component name="RunManager" selected="Application.MathClass">
     <configuration name="ArithmeticExpressions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArithmeticExpressions" />
       <module name="myJava" />
@@ -72,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="MathClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MathClass" />
       <module name="myJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MathClass" />
         <item itemvalue="Application.TypeCasting" />
         <item itemvalue="Application.ArithmeticExpressions" />
         <item itemvalue="Application.ConstantsExample" />
         <item itemvalue="Application.ArrayExample" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726074392087</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="casting and type-conversion">
+      <option name="closed" value="true" />
+      <created>1726214871713</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1726214871713</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +214,7 @@
     <MESSAGE value="arrays explained" />
     <MESSAGE value="constants explained" />
     <MESSAGE value="arithmetic operations explained" />
-    <option name="LAST_COMMIT_MESSAGE" value="arithmetic operations explained" />
+    <MESSAGE value="casting and type-conversion" />
+    <option name="LAST_COMMIT_MESSAGE" value="casting and type-conversion" />
   </component>
 </project>
