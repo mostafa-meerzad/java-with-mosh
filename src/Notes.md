@@ -613,3 +613,135 @@ public class ExpressionExample {
 In summary, arithmetic expressions in Java are used to perform mathematical calculations using various operators.
 Operator precedence and data types (like integer vs. floating-point) can affect the result of an expression, so
 understanding how to control these behaviors is important in writing correct programs.
+
+## Casting and Type-conversion
+
+In Java, **casting** and **type conversion** are mechanisms that allow you to change one data type into another. While
+they are often used interchangeably, they refer to slightly different concepts depending on whether you're working with
+**primitive types** or **reference types** (objects).
+
+### 1. **Type Conversion**:
+
+Type conversion (also known as **implicit casting** or **automatic type conversion**) occurs when the Java compiler
+automatically converts one data type to another. This happens when there’s no risk of data loss or when converting from
+a smaller to a larger data type (widening conversion).
+
+#### Example of Type Conversion:
+
+```java
+int num = 100;
+double d = num;  // Automatic conversion from int to double
+System.out.println(d);  // Outputs 100.0
+```
+
+In the example above, the integer value `num` is automatically converted into a `double`, which is a wider data type.
+This is called **widening conversion** and is done automatically by the Java compiler.
+
+#### Types of Automatic Conversions:
+
+- `byte` → `short` → `int` → `long` → `float` → `double`
+- `char` → `int` → `long` → `float` → `double`
+
+### 2. **Casting**:
+
+Casting is an explicit type conversion, where you manually convert one data type into another. This is necessary when
+the conversion might result in **loss of data** (narrowing conversion), or when converting between incompatible types.
+
+#### Types of Casting in Java:
+
+- **Primitive Type Casting**: This involves converting between primitive data types.
+- **Reference Type Casting**: This involves casting between classes and interfaces.
+
+#### Example of Primitive Casting:
+
+```java
+double d = 9.7;
+int i = (int) d;  // Explicit casting from double to int
+System.out.println(i);  // Outputs 9
+```
+
+Here, a `double` is explicitly cast to an `int`. Since `double` has a decimal part, casting to `int` results in
+truncation (the decimal part is lost).
+
+#### Primitive Casting Types:
+
+- **Widening Casting** (automatically done): Converts a smaller type to a larger type.
+    - Examples: `int` to `double`, `float` to `double`
+- **Narrowing Casting** (done manually): Converts a larger type to a smaller type.
+    - Examples: `double` to `int`, `long` to `short`
+
+#### Example of Narrowing Conversion:
+
+```java
+long l = 1000L;
+int i = (int) l;  // Explicit casting from long to int
+System.out.println(i);  // Outputs 1000
+```
+
+### 3. **Reference Type Casting**:
+
+Reference type casting is used when converting between objects in an inheritance hierarchy. You can cast from a subclass
+to a superclass (upcasting, which is automatic) or from a superclass to a subclass (downcasting, which is explicit).
+
+- **Upcasting**: Converting a subclass type to a superclass type (automatic).
+- **Downcasting**: Converting a superclass type to a subclass type (explicit).
+
+#### Example of Upcasting:
+
+```java
+class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();  // Upcasting (automatic)
+        a.sound();  // Outputs "Dog barks" (polymorphism)
+    }
+}
+```
+
+#### Example of Downcasting:
+
+```java
+Animal a = new Dog();  // Upcasting
+Dog d = (Dog) a;  // Downcasting (explicit)
+d.
+
+sound();  // Outputs "Dog barks"
+```
+
+Downcasting should only be done when you are certain that the object is of the correct subclass type. Otherwise,
+a `ClassCastException` will occur.
+
+### Summary of Key Points:
+
+1. **Type Conversion**:
+    - Automatic conversion (no data loss).
+    - Happens when moving from a smaller type to a larger type (widening).
+    - Examples: `int` to `double`, `char` to `int`.
+
+2. **Casting**:
+    - Manual conversion (explicit).
+    - Necessary when there's potential data loss or incompatibility.
+    - **Narrowing casting** (e.g., `double` to `int`) requires explicit casting.
+    - **Downcasting** (casting from a superclass to a subclass) requires explicit casting.
+
+3. **Primitive Type Casting**:
+    - Automatic widening (smaller to larger).
+    - Manual narrowing (larger to smaller).
+
+4. **Reference Type Casting**:
+    - **Upcasting** (subclass to superclass) is automatic.
+    - **Downcasting** (superclass to subclass) is explicit.
+
+Understanding casting and type conversion in Java is essential, especially when dealing with different types of
+variables or working with object-oriented programming.
