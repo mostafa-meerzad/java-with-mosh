@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class ConditionalStatements {
     public static void main() {
         // todo
@@ -26,7 +28,30 @@ public class ConditionalStatements {
             System.out.println(" beautiful day");
         else
             System.out.println("cold day");
+//----------------------------------------------
+//        int income = 120_0000;
+//        boolean highIncome = false;
+//        if (income > 100_000) {
+//            highIncome = true;
+//        } else {
+//            highIncome = false;
+//        }
 
+//        System.out.print("do we have highIncome: ");
+//        System.out.println(highIncome);
 
+        // simplify the code above
+
+        int income = 120_000;
+        boolean highIncome = income > 100_000;
+
+        if (highIncome)
+            System.out.println("high income");
+        else
+            System.out.println("low income");
+
+        // use ternary operator
+
+        String className = income > 100_000 ? "first" : "economy";
     }
 }

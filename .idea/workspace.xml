@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="Logical operators">
-      <change afterPath="$PROJECT_DIR$/src/ConditionalStatements.java" afterDir="false" />
+    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="conditional statements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConditionalStatements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConditionalStatements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726459973179</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="conditional statements">
+      <option name="closed" value="true" />
+      <created>1726461700893</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1726461700893</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +264,7 @@
     <MESSAGE value="Reading inputs from terminal" />
     <MESSAGE value="comparison operators" />
     <MESSAGE value="Logical operators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logical operators" />
+    <MESSAGE value="conditional statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="conditional statements" />
   </component>
 </project>

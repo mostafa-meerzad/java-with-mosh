@@ -998,3 +998,16 @@ public class ConditionalStatements {
 }
 
 ```
+
+## The Ternary Operator
+
+condition ? statement1: statement2
+
+if condition is true statement1 is executed otherwise statement2 is executed
+
+```java
+public static void main(String[] args) {
+    int income = 102_000;
+    String className = income > 100_000 ? "First": "Economy";
+}
+```
