@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="Reading inputs from terminal">
-      <change afterPath="$PROJECT_DIR$/src/ComparisonOperators.java" afterDir="false" />
+    <list default="true" id="cbf6afe8-2119-4a12-8ec2-a5e817611f6e" name="Changes" comment="comparison operators">
+      <change afterPath="$PROJECT_DIR$/src/LogicalOperators.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notes.md" afterDir="false" />
     </list>
@@ -42,6 +42,7 @@
     "Application.ArrayExample.executor": "Run",
     "Application.ComparisonOperators.executor": "Run",
     "Application.ConstantsExample.executor": "Run",
+    "Application.LogicalOperators.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MathClass.executor": "Run",
     "Application.MortgageCalculator.executor": "Run",
@@ -55,9 +56,16 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ComparisonOperators">
+  <component name="RunManager" selected="Application.LogicalOperators">
     <configuration name="ComparisonOperators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ComparisonOperators" />
+      <module name="myJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogicalOperators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LogicalOperators" />
       <module name="myJava" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,13 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypeCasting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TypeCasting" />
-      <module name="myJava" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="java-with-mosh" />
       <method v="2">
@@ -106,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LogicalOperators" />
         <item itemvalue="Application.ComparisonOperators" />
         <item itemvalue="Application.MortgageCalculator" />
         <item itemvalue="Application.ReadingInput" />
         <item itemvalue="Application.MathClass" />
-        <item itemvalue="Application.TypeCasting" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726231419690</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="comparison operators">
+      <option name="closed" value="true" />
+      <created>1726457532714</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1726457532714</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +245,7 @@
     <MESSAGE value="casting and type-conversion" />
     <MESSAGE value="Math calss" />
     <MESSAGE value="Reading inputs from terminal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reading inputs from terminal" />
+    <MESSAGE value="comparison operators" />
+    <option name="LAST_COMMIT_MESSAGE" value="comparison operators" />
   </component>
 </project>

@@ -908,17 +908,55 @@ Feel free to ask if something is unclear or if you'd like more explanation!
 
 ```java
 
-  public static void main(String[] args) {
-        int x = 10;
-        int y = 1;
+public static void main(String[] args) {
+    int x = 10;
+    int y = 1;
 
-        System.out.print("x == y: ");
-        System.out.println(x == y);
-        System.out.print("x <= y: ");
-        System.out.println(x <= y);
-        System.out.print("x >= y: ");
-        System.out.println(x >= y);
-        System.out.print("x != y: ");
-        System.out.println(x != y);
+    System.out.print("x == y: ");
+    System.out.println(x == y);
+    System.out.print("x <= y: ");
+    System.out.println(x <= y);
+    System.out.print("x >= y: ");
+    System.out.println(x >= y);
+    System.out.print("x != y: ");
+    System.out.println(x != y);
+}
+```
+
+## Logical Operators
+
+### And Operator (&&)
+
+```java
+public static void main(String[] args) {
+    int temperature = 12;
+    boolean isWarm = temperature > 20 && temperature < 30;
+    System.out.println(isWarm);
+}
+```
+
+### Or Operator (||)
+
+```java
+  public static void main(String[] args) {
+    boolean hasHighIncome = true;
+    boolean hasGoodCredit = true;
+    boolean isEligible = hasHighIncome || hasGoodCredit; // => true
+    System.out.println(isEligible); //=> true
+
+}
+```
+
+### Not Operator (!)
+
+```java
+  public static void main(String[] args) {
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = true;
+        boolean hasCriminalRecord = false;
+//        boolean isEligible = hasHighIncome || hasGoodCredit; // => true
+        boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord; // => true
+        System.out.println(isEligible); //=> true
+
     }
 ```
