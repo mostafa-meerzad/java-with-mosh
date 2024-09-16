@@ -903,3 +903,22 @@ public class Main {
 7. **`scanner.close();`** – Closes the scanner to release system resources.
 
 Feel free to ask if something is unclear or if you'd like more explanation!
+
+## Comparison Operators
+
+```java
+
+  public static void main(String[] args) {
+        int x = 10;
+        int y = 1;
+
+        System.out.print("x == y: ");
+        System.out.println(x == y);
+        System.out.print("x <= y: ");
+        System.out.println(x <= y);
+        System.out.print("x >= y: ");
+        System.out.println(x >= y);
+        System.out.print("x != y: ");
+        System.out.println(x != y);
+    }
+```
